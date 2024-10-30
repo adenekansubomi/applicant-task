@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+button{
+    font-family: "Inter", sans-serif;
+}
+
+
+.overall{
+    background-color: #F7F7FC;
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.signup_body{
+    margin: 0;
+    width: 50vw;
+}
+
+.logo_img{
+    display: inline;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.logo_img img{
+    width: 32px;
+    height: 32px;
+}
+
+.logo{
+    display: flex;        
+    align-items: center;         
+}
+
+.logo_text{
+    display: inline-block;
+    margin: 0;
+}
+
+.logo_text h3{
+    font-weight: 400;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+}
+
+.signup_main{
+    margin-top: 70px;
+    display: flex;
+    flex-flow: column;
+}
+
+.signup_text{
+    margin-bottom: 35px;
+}
+
+.signup_text h1{
+    margin-bottom: 8px;
+    color: #262f3d;
+}
+
+.signup_text p{
+    color: #A4A9B2;
+    font-size: 14.5px;
+}
+
+label{
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.inputs{
+    background-color: transparent;
+    border: 1px solid #a4a9b2a1;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    color: #5e6166;
+}
+
+input::placeholder{
+    color: #9198a3;
+}
+
+.inputs:focus{
+    border: 1px solid #a4a9b2a1;
+    outline: none;
+    color: #7c8188;
+}
+
+.others{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.others span{
+    display: flex;
+    align-items: center;
+}
+
+.others span label{
+    margin-bottom: 0;
+}
+
+.others span input{
+    margin-right: 5px;
+}
+
+.fpassword a{
+    color: #5429FF;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.fpassword a:hover{
+    color: #340fc7;
+}
+
+.signin_btn{
+    background-color: #5429FF;
+    color: white;
+    border: none;
+    padding: 11px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.7s linear;
+}
+
+
+.signin_btn:hover{
+    background-color: #340fc7;
+}
+
+.google{
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+    padding: 6px;   
+    background-color: transparent;
+    border: 1px solid #a4a9b2a1; 
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+
+.google:hover{
+    border-color: #5429FF;
+    color: #5429FF;
+}
+
+.google_icon {
+    display: inline;
+    margin-right: 4px;
+}
+
+.google_icon img{
+    width: 24px;
+    height: 24px;
+}
+
+.no_acc{
+    font-size: 13px;
+    text-align: center;
+}
+
+.no_acc a{
+    color: #5429FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.no_acc  a:hover{
+    color: #340fc7;
+}
+
+.signup_image{
+    background-color: #E5DFFF;
+    border-radius: 30px;
+    margin: 0;
+    width: 50vw;
+    text-align: center;
+}
+
+.signup_image img{
+    height: 90vh;
+}
+
+
+
+@media (max-width: 830px){
+    .signup_image{
+        display: flex;
+        align-items: center;
+    }
+    .signup_image img{
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px){
+    .overall{
+        padding: 10px;
+    }
+    .signup_text p{
+        font-size: 13px;
+    }
+    .others a, label{
+        font-size: 12px;
+    }
+    .signup_main{
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 600px){
+    .overall{
+        padding: 20px;
+    }
+    .signup_image{
+        display: none;
+    }
+    .signup_body{
+        margin: 0;
+        width: 100vw;
+    }
+    .signup_main{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 400px){
+    .logo{
+        flex-flow: column; 
+        margin-top: 15px;              
+    }
+    .logo_img img{
+        width: 26px;
+        height: 26px;
+        margin-bottom: 7px;
+    }
+    .logo h3{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .signup_text h1{
+        font-size: 1.5rem;
+    }
+}
